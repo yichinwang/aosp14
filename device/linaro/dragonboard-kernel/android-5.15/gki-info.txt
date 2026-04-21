@@ -1,0 +1,2 @@
+certify_bootimg_extra_args=--prop ARCH:arm64 --prop BRANCH: --prop KERNEL_RELEASE:5.15.131-android14-11-g7b356cb3002e-ab11031945
+kernel_release=5.15.131-android14-11-g7b356cb3002e-ab11031945

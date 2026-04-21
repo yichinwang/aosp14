@@ -1,0 +1,18 @@
+type dlkm_loader, domain;
+type dlkm_loader_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(dlkm_loader)
+
+# Allow insmod on vendor, system and system_dlkm partitions
+allow dlkm_loader self:capability sys_module;
+allow dlkm_loader system_dlkm_file:dir r_dir_perms;
+allow dlkm_loader system_dlkm_file:file r_file_perms;
+allow dlkm_loader system_dlkm_file:system module_load;
+allow dlkm_loader system_file:system module_load;
+allow dlkm_loader vendor_file:system module_load;
+
+# needed for libmodprobe to read kernel commandline
+allow dlkm_loader proc_cmdline:file r_file_perms;
+allow dlkm_loader proc_bootconfig:file r_file_perms;
+
+# Allow writing to kernel log
+allow dlkm_loader kmsg_device:chr_file rw_file_perms;
