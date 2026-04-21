@@ -1,0 +1,62 @@
+/*
+ * Copyright (C) 2023 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+syntax = "proto2";
+
+package android.os.statsd.devicelock;
+
+import "frameworks/proto_logging/stats/atom_field_options.proto";
+import "frameworks/proto_logging/stats/atoms.proto";
+
+option java_package = "com.android.os.devicelock";
+option java_multiple_files = true;
+
+extend Atom {
+  optional DeviceLockCheckInRequestReported device_lock_check_in_request_reported = 726
+          [(module) = "devicelock"];
+  optional DeviceLockProvisioningCompleteReported device_lock_provisioning_complete_reported = 727
+          [(module) = "devicelock"];
+  optional DeviceLockKioskAppRequestReported device_lock_kiosk_app_request_reported = 728
+          [(module) = "devicelock"];
+}
+
+message DeviceLockCheckInRequestReported {
+  enum RequestType {
+    // Default value for the request type
+    UNKNOWN = 0;
+    // The Check-in request is getDeviceCheckInStatus
+    GET_DEVICE_CHECK_IN_STATUS = 1;
+    // The Check-in request is pauseDeviceProvisioning
+    PAUSE_DEVICE_PROVISIONING = 2;
+    // The Check-in request is reportDeviceProvisioningComplete
+    // DEPRECATED, because the gRPC call for this log type is removed
+    REPORT_DEVICE_PROVISIONING_COMPLETE = 3 [deprecated = true];
+    // The Check-in request is reportDeviceProvisionState
+    REPORT_DEVICE_PROVISION_STATE = 4;
+    // The Check-in request is isDeviceInApprovedCountry
+    IS_DEVICE_IN_APPROVED_COUNTRY = 5;
+  }
+
+  optional RequestType type= 1;
+}
+
+message DeviceLockProvisioningCompleteReported {
+  optional int64 time_spent_on_provisioning_seconds = 1;
+}
+
+message DeviceLockKioskAppRequestReported {
+  optional int32 kiosk_app_uid = 1 [(is_uid) = true];
+}
