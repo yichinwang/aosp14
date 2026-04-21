@@ -1,0 +1,29 @@
+# Copyright 2023 Android Open Source Project
+# SPDX-License-Identifier: MIT
+option(
+  'decoders',
+  type : 'array',
+  value : ['auto'],
+  choices : [
+    'gles',
+    'vulkan',
+    'magma',
+    'composer',
+    'auto',
+  ],
+  description : 'A list of supported decoders to build'
+)
+option(
+  'log-level',
+  type : 'combo',
+  value : 'error',
+  choices : [
+    'none',
+    'info',
+    'warn',
+    'error',
+  ],
+  description : 'The logging level of gfxstream'
+)
+
+option('qnx_target', type : 'string', value : '', description : 'QNX SDP target path')
