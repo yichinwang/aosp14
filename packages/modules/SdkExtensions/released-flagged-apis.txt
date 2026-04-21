@@ -1,0 +1,44 @@
+# This file contains a list of feature flags whose corresponding API should be
+# included in the next SDK extension. This allows APIs to be released in an SDK
+# extension without removing @FlaggeApi annotations from the source which means
+# those APIs will be hidden from the next QPR release.
+#
+# These flags are converted into command line options that are passed to
+# Metalava when generating API signature files and stubs for SDK snapshots for
+# previous dessert releases, e.g. R, S, Tiramisu, etc. and also for the next
+# SDK extension (and eventually Android SDK) release.
+#
+# Flags must only be added to this once they are suitable for release and only
+# immediately before the next SDK extension is to be created. Adding them here
+# before a normal train release will cause additional APIs to be included in
+# that train release.
+#
+# Flags must only be removed from this once the corresponding @FlaggedApi
+# annotations are removed from the source code which can only be done once those
+# features have been approved for general release.
+#
+# Once an SDK extension has been created it will not be possible to use any of
+# the flags in this file in any new @FlaggedApi annotations as otherwise that
+# would cause those APIs to be included in SDK snapshots used by the next train
+# release.
+#
+# The file should be structured in sections with flags in alphabetical order
+# within each section. Each section should be separated from the preceding one
+# by a comment indicating which SDK extension the section relates to.
+
+# Released in SDK Extension #10 - M-2023-11
+# Tethering
+com.android.net.flags.register_nsd_offload_engine_api
+
+# Released in SDK Extension #11 - M-2024-02
+# Adservices
+ad_id_cache_enabled
+adservices_enablement_check_enabled
+adservices_outcomereceiver_r_api_enabled
+enable_adext_data_service_apis
+enable_adservices_api_enabled
+topics_encryption_enabled
+
+# Tethering
+com.android.net.flags.basic_background_restrictions_enabled
+com.android.net.flags.support_is_uid_networking_blocked

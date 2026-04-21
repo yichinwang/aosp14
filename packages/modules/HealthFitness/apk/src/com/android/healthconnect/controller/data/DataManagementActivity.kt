@@ -1,0 +1,129 @@
+/*
+ * Copyright (C) 2023 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ *
+ */
+
+package com.android.healthconnect.controller.data
+
+import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
+import androidx.activity.viewModels
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import com.android.healthconnect.controller.R
+import com.android.healthconnect.controller.migration.MigrationActivity.Companion.maybeRedirectToMigrationActivity
+import com.android.healthconnect.controller.migration.MigrationActivity.Companion.maybeShowWhatsNewDialog
+import com.android.healthconnect.controller.migration.MigrationViewModel
+import com.android.healthconnect.controller.migration.api.MigrationState
+import com.android.healthconnect.controller.navigation.DestinationChangedListener
+import com.android.healthconnect.controller.onboarding.OnboardingActivity
+import com.android.healthconnect.controller.onboarding.OnboardingActivity.Companion.shouldRedirectToOnboardingActivity
+import com.android.healthconnect.controller.utils.FeatureUtils
+import com.android.healthconnect.controller.utils.activity.EmbeddingUtils.maybeRedirectIntoTwoPaneSettings
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+
+/** Entry point activity for Health Connect Data Management controllers. */
+@AndroidEntryPoint(CollapsingToolbarBaseActivity::class)
+class DataManagementActivity : Hilt_DataManagementActivity() {
+
+    @Inject lateinit var featureUtils: FeatureUtils
+
+    private val migrationViewModel: MigrationViewModel by viewModels()
+
+    private val openOnboardingActivity =
+        registerForActivityResult(StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_CANCELED) {
+                finish()
+            }
+        }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_data_management)
+        if (featureUtils.isNewInformationArchitectureEnabled()) {
+            updateNavGraphToNewIA()
+        }
+
+        if (maybeRedirectIntoTwoPaneSettings(this)) {
+            return
+        }
+
+        if (savedInstanceState == null && shouldRedirectToOnboardingActivity(this)) {
+            openOnboardingActivity.launch(OnboardingActivity.createIntent(this))
+        }
+
+        val currentMigrationState = migrationViewModel.getCurrentMigrationUiState()
+
+        if (maybeRedirectToMigrationActivity(this, currentMigrationState)) {
+            return
+        }
+
+        migrationViewModel.migrationState.observe(this) { migrationState ->
+            when (migrationState) {
+                is MigrationViewModel.MigrationFragmentState.WithData -> {
+                    if (migrationState.migrationState == MigrationState.COMPLETE) {
+                        maybeShowWhatsNewDialog(this)
+                    }
+                }
+                else -> {
+                    // do nothing
+                }
+            }
+        }
+    }
+
+    private fun updateNavGraphToNewIA() {
+        val navRes = R.navigation.data_nav_graph_new_ia
+        val finalHost = NavHostFragment.create(navRes)
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.nav_host_fragment, finalHost)
+            .setPrimaryNavigationFragment(finalHost)
+            .commit()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        findNavController(R.id.nav_host_fragment)
+            .addOnDestinationChangedListener(DestinationChangedListener(this))
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val currentMigrationState = migrationViewModel.getCurrentMigrationUiState()
+
+        if (maybeRedirectToMigrationActivity(this, currentMigrationState)) {
+            return
+        }
+    }
+
+    override fun onBackPressed() {
+        val navController = findNavController(R.id.nav_host_fragment)
+        if (!navController.popBackStack()) {
+            finish()
+        }
+    }
+
+    override fun onNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        if (!navController.popBackStack()) {
+            finish()
+        }
+        return true
+    }
+}

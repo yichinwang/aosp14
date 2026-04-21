@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="uid_label" msgid="8421971615411294156">"មេឌៀ"</string>
+    <string name="storage_description" msgid="4081716890357580107">"ទំហំផ្ទុកមូលដ្ឋាន"</string>
+    <string name="picker_app_label" msgid="1195424381053599122">"មុខងារ​ជ្រើសរើស​មេឌៀ"</string>
+    <string name="artist_label" msgid="8105600993099120273">"សិល្បករ"</string>
+    <string name="unknown" msgid="2059049215682829375">"មិនស្គាល់"</string>
+    <string name="root_images" msgid="5861633549189045666">"រូបភាព"</string>
+    <string name="root_videos" msgid="8792703517064649453">"វីដេអូ"</string>
+    <string name="root_audio" msgid="3505830755201326018">"សំឡេង"</string>
+    <string name="root_documents" msgid="3829103301363849237">"ឯកសារ"</string>
+    <string name="permission_required" msgid="1460820436132943754">"តម្រូវ​ឱ្យមាន​ការអនុញ្ញាត ដើម្បី​កែតម្រូវ ឬ​លុបធាតុ​នេះ។"</string>
+    <string name="permission_required_action" msgid="706370952366113539">"បន្ត"</string>
+    <string name="grant_dialog_button_allow" msgid="1644287024501033471">"អនុញ្ញាត"</string>
+    <string name="grant_dialog_button_deny" msgid="6190589471415815741">"បដិសេធ"</string>
+    <string name="permission_more_thumb" msgid="1938863829470531577">"{count,plural, =1{+<xliff:g id="COUNT_0">^1</xliff:g>}other{+<xliff:g id="COUNT_1">^1</xliff:g>}}"</string>
+    <string name="permission_more_text" msgid="2471785045095597753">"{count,plural, =1{បូករួម​ទាំង​ធាតុ <xliff:g id="COUNT_0">^1</xliff:g> បន្ថែម​ទៀត}other{បូករួម​ទាំង​ធាតុ <xliff:g id="COUNT_1">^1</xliff:g> បន្ថែម​ទៀត}}"</string>
+    <string name="cache_clearing_dialog_title" msgid="8907893815183913664">"សម្អាត​ឯកសារ​កម្មវិធី​បណ្ដោះអាសន្ន"</string>
+    <string name="cache_clearing_dialog_text" msgid="7057784635111940957">"<xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> ចង់​សម្អាត​ឯកសារ​បណ្ដោះអាសន្ន​មួយចំនួន។ សកម្មភាពនេះ​អាច​បណ្ដាលឱ្យ​ការប្រើប្រាស់​ថ្ម ឬ​ទិន្នន័យ​ទូរសព្ទចល័ត​មានការកើនឡើង​។"</string>
+    <string name="cache_clearing_in_progress_title" msgid="6902220064511664209">"កំពុងសម្អាត​ឯកសារ​កម្មវិធី​បណ្ដោះអាសន្ន…"</string>
+    <string name="clear" msgid="5524638938415865915">"សម្អាត"</string>
+    <string name="allow" msgid="8885707816848569619">"អនុញ្ញាត"</string>
+    <string name="deny" msgid="6040983710442068936">"បដិសេធ"</string>
+    <string name="picker_browse" msgid="5554477454636075934">"រុករក…"</string>
+    <string name="picker_settings" msgid="6443463167344790260">"កម្មវិធី​មេឌៀលើពពក"</string>
+    <string name="picker_settings_system_settings_menu_title" msgid="3055084757610063581">"កម្មវិធី​មេឌៀលើពពក"</string>
+    <string name="picker_settings_title" msgid="5647700706470673258">"កម្មវិធី​មេឌៀលើពពក"</string>
+    <string name="picker_settings_description" msgid="2916686824777214585">"ចូលប្រើប្រាស់មេឌៀលើពពករបស់អ្នក នៅពេលកម្មវិធី ឬគេហទំព័រស្នើឱ្យអ្នកជ្រើសរើសរូបថត ឬវីដេអូ"</string>
+    <string name="picker_settings_selection_message" msgid="245453573086488596">"ចូលប្រើប្រាស់មេឌៀលើពពកពី"</string>
+    <string name="picker_settings_no_provider" msgid="2582311853680058223">"គ្មាន"</string>
+    <string name="picker_settings_toast_error" msgid="697274445512467469">"មិនអាចប្ដូរ​កម្មវិធី​មេឌៀ​ពពក​នៅពេលនេះបានទេ។"</string>
+    <string name="picker_sync_notification_channel" msgid="1867105708912627993">"មុខងារ​ជ្រើសរើស​មេឌៀ"</string>
+    <string name="picker_sync_notification_title" msgid="1122713382122055246">"មុខងារ​ជ្រើសរើស​មេឌៀ"</string>
+    <string name="picker_sync_notification_text" msgid="8204423917712309382">"កំពុងធ្វើ​សមកាលកម្ម​មេឌៀ…"</string>
+    <string name="add" msgid="2894574044585549298">"បញ្ចូល"</string>
+    <string name="deselect" msgid="4297825044827769490">"ដក​ការជ្រើសរើស"</string>
+    <string name="deselected" msgid="8488133193326208475">"បានដក​ការជ្រើសរើស"</string>
+    <string name="select" msgid="2704765470563027689">"ជ្រើសរើស"</string>
+    <string name="selected" msgid="9151797369975828124">"បានជ្រើសរើស"</string>
+    <string name="select_up_to" msgid="6994294169508439957">"{count,plural, =1{ជ្រើសរើស​ធាតុ​រហូតដល់ <xliff:g id="COUNT_0">^1</xliff:g>}other{ជ្រើសរើស​ធាតុ​រហូតដល់ <xliff:g id="COUNT_1">^1</xliff:g>}}"</string>
+    <string name="recent" msgid="6694613584743207874">"ថ្មីៗ"</string>
+    <string name="picker_photos_empty_message" msgid="5980619500554575558">"គ្មានរូបថត ឬវីដេអូទេ"</string>
+    <string name="picker_album_media_empty_message" msgid="7061850698189881671">"គ្មានរូបថត ឬវីដេអូដែលអាចប្រើបាន"</string>
+    <string name="picker_albums_empty_message" msgid="8341079772950966815">"គ្មាន​អាល់ប៊ុម​ទេ"</string>
+    <string name="picker_view_selected" msgid="2266031384396143883">"មើលអ្វីដែលបានជ្រើសរើស"</string>
+    <string name="picker_photos" msgid="7415035516411087392">"រូបថត"</string>
+    <!-- no translation found for picker_videos (2886971435439047097) -->
+    <skip />
+    <string name="picker_albums" msgid="4822511902115299142">"អាល់ប៊ុម"</string>
+    <string name="picker_preview" msgid="6257414886055861039">"មើល​សាកល្បង"</string>
+    <string name="picker_work_profile" msgid="2083221066869141576">"ប្ដូរទៅ​កម្រងព័ត៌មាន​ការងារ"</string>
+    <string name="picker_personal_profile" msgid="639484258397758406">"ប្ដូរទៅ​កម្រងព័ត៌មាន​ផ្ទាល់ខ្លួន"</string>
+    <string name="picker_profile_admin_title" msgid="4172022376418293777">"បានទប់ស្កាត់ដោយអ្នកគ្រប់គ្រងរបស់អ្នក"</string>
+    <string name="picker_profile_admin_msg_from_personal" msgid="1941639895084555723">"ការចូលប្រើទិន្នន័យការងារពីកម្មវិធី​ផ្ទាល់ខ្លួនមិនត្រូវបានអនុញ្ញាតទេ"</string>
+    <string name="picker_profile_admin_msg_from_work" msgid="8048524337462790110">"ការចូលប្រើទិន្នន័យផ្ទាល់ខ្លួនពីកម្មវិធី​ការងារមិនត្រូវបានអនុញ្ញាតទេ"</string>
+    <string name="picker_profile_work_paused_title" msgid="382212880704235925">"កម្មវិធី​ការងារ​ត្រូវបានផ្អាក"</string>
+    <string name="picker_profile_work_paused_msg" msgid="6321552322125246726">"ដើម្បីបើក​រូបថតការងារ សូមបើក​កម្មវិធីការងារ​របស់អ្នក រួចព្យាយាម​ម្ដងទៀត"</string>
+    <string name="picker_privacy_message" msgid="9132700451027116817">"កម្មវិធីនេះ​អាចចូលប្រើបានតែ​រូបថត​ដែលអ្នកជ្រើសរើស​ប៉ុណ្ណោះ"</string>
+    <string name="picker_header_permissions" msgid="675872774407768495">"ជ្រើសរើស​រូបថត និងវីដេអូ​ដែលអ្នកអនុញ្ញាតឱ្យ​កម្មវិធីនេះចូលប្រើ"</string>
+    <string name="picker_album_item_count" msgid="4420723302534177596">"{count,plural, =1{ធាតុ <xliff:g id="COUNT_0">^1</xliff:g>}other{ធាតុ <xliff:g id="COUNT_1">^1</xliff:g>}}"</string>
+    <string name="picker_add_button_multi_select" msgid="4005164092275518399">"បញ្ចូល (<xliff:g id="COUNT">^1</xliff:g>)"</string>
+    <string name="picker_add_button_multi_select_permissions" msgid="5138751105800138838">"អនុញ្ញាត (<xliff:g id="COUNT">^1</xliff:g>)"</string>
+    <string name="picker_add_button_allow_none_option" msgid="9183772732922241035">"អនុញ្ញាត \"គ្មាន\""</string>
+    <string name="picker_category_camera" msgid="4857367052026843664">"កាមេរ៉ា"</string>
+    <string name="picker_category_downloads" msgid="793866660287361900">"ការទាញយក"</string>
+    <string name="picker_category_favorites" msgid="7008495397818966088">"សំណព្វ"</string>
+    <string name="picker_category_screenshots" msgid="7216102327587644284">"រូបថត​អេក្រង់"</string>
+    <!-- no translation found for picker_category_videos (1478458836380241356) -->
+    <skip />
+    <string name="picker_motion_photo_text" msgid="5016603812468180816">"រូបថត​មានចលនា"</string>
+    <string name="picker_item_content_desc" msgid="7680591530155286423">"<xliff:g id="ITEM_NAME">%1$s</xliff:g> ដែលបានថតនៅថ្ងៃទី <xliff:g id="TIME">%2$s</xliff:g>"</string>
+    <string name="picker_video_item_content_desc" msgid="7828900089119214801">"វីដេអូបានថតនៅថ្ងៃទី <xliff:g id="TIME">%1$s</xliff:g> ដែលមានរយៈពេល <xliff:g id="DURATION">%2$s</xliff:g>"</string>
+    <string name="picker_photo" msgid="1739342083494962153">"រូបថត"</string>
+    <string name="picker_gif" msgid="8333318083107368726">"GIF"</string>
+    <string name="picker_motion_photo" msgid="4385182195289546308">"រូបថត​មានចលនា"</string>
+    <string name="picker_mute_video" msgid="2496585809229800096">"បិទ​សំឡេង​វីដេអូ"</string>
+    <string name="picker_unmute_video" msgid="6611741290641963568">"បើក​សំឡេង​វីដេអូ"</string>
+    <string name="picker_play_video" msgid="7106025944628666250">"ចាក់"</string>
+    <string name="picker_pause_video" msgid="1092718225234326702">"ផ្អាក"</string>
+    <string name="picker_error_snackbar" msgid="5970192792792369203">"មិន​អាច​ចាក់​​វីដេអូ​បាន​ទេ"</string>
+    <string name="picker_error_dialog_title" msgid="4540095603788920965">"មានបញ្ហាក្នុងការចាក់វីដេអូ"</string>
+    <string name="picker_error_dialog_body" msgid="2515738446802971453">"ពិនិត្យ​ការតភ្ជាប់​អ៊ីនធឺណិត​របស់អ្នក រួចព្យាយាម​ម្ដង​ទៀត"</string>
+    <string name="picker_error_dialog_positive_action" msgid="749544129082109232">"ព្យាយាមម្ដងទៀត"</string>
+    <string name="not_selected" msgid="2244008151669896758">"មិនបានជ្រើសរើសទេ"</string>
+    <string name="preloading_dialog_title" msgid="4974348221848532887">"កំពុងរៀបចំមេឌៀដែលអ្នកបានជ្រើសរើស"</string>
+    <string name="preloading_progress_message" msgid="4741327138031980582">"<xliff:g id="NUMBER_PRELOADED">%1$d</xliff:g> នៃ <xliff:g id="NUMBER_TOTAL">%2$d</xliff:g> រួចរាល់ហើយ"</string>
+    <string name="preloading_cancel_button" msgid="824053521307342209">"បោះបង់"</string>
+    <string name="picker_banner_cloud_first_time_available_title" msgid="5912973744275711595">"ឥឡូវនេះមានរួមបញ្ចូលរូបថតដែលបានបម្រុងទុក"</string>
+    <string name="picker_banner_cloud_first_time_available_desc" msgid="5570916598348187607">"អ្នកអាចជ្រើសរើសរូបថតពីគណនី <xliff:g id="APP_NAME">%1$s</xliff:g> <xliff:g id="USER_ACCOUNT">%2$s</xliff:g>"</string>
+    <string name="picker_banner_cloud_account_changed_title" msgid="4825058474378077327">"បានធ្វើបច្ចុប្បន្នភាពគណនី <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="picker_banner_cloud_account_changed_desc" msgid="3433218869899792497">"ឥឡូវនេះ រូបថតពី <xliff:g id="USER_ACCOUNT">%1$s</xliff:g> ត្រូវបានរួមបញ្ចូលនៅទីនេះ"</string>
+    <string name="picker_banner_cloud_choose_app_title" msgid="3165966147547974251">"ជ្រើសរើសកម្មវិធី​មេឌៀលើពពក"</string>
+    <string name="picker_banner_cloud_choose_app_desc" msgid="2359212653555524926">"ដើម្បីរួមបញ្ចូលរូបថតដែលបានបម្រុងទុកនៅទីនេះ សូមជ្រើសរើសកម្មវិធី​មេឌៀលើពពកនៅក្នុងការកំណត់"</string>
+    <string name="picker_banner_cloud_choose_account_title" msgid="5010901185639577685">"ជ្រើសរើស​គណនី <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="picker_banner_cloud_choose_account_desc" msgid="8868134443673142712">"ដើម្បីរួមបញ្ចូលរូបថតពី <xliff:g id="APP_NAME">%1$s</xliff:g> នៅទីនេះ សូមជ្រើសរើសគណនីនៅក្នុងកម្មវិធី"</string>
+    <string name="picker_banner_cloud_dismiss_button" msgid="2935903078288463882">"ច្រានចោល"</string>
+    <string name="picker_banner_cloud_choose_app_button" msgid="934085679890435479">"ជ្រើសរើស​កម្មវិធី"</string>
+    <string name="picker_banner_cloud_choose_account_button" msgid="7979484877116991631">"ជ្រើសរើស​គណនី"</string>
+    <string name="picker_banner_cloud_change_account_button" msgid="8361239765828471146">"ប្ដូរ​គណនី"</string>
+    <string name="picker_loading_photos_message" msgid="6449180084857178949">"កំពុងផ្ទុករូបថតទាំងអស់របស់អ្នក"</string>
+    <string name="permission_write_audio" msgid="8819694245323580601">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> កែ​ឯកសារសំឡេង​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> កែ​ឯកសារសំឡេង <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_write_audio" msgid="6029375427984180097">"{count,plural, =1{កំពុងកែ​ឯកសារសំឡេង…}other{កំពុងកែ​ឯកសារសំឡេង <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="permission_write_video" msgid="103902551603700525">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> កែ​វីដេអូ​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> កែ​វីដេអូ <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_write_video" msgid="7014908418349819148">"{count,plural, =1{កំពុងកែ​វីដេអូ…}other{កំពុងកែ​វីដេអូ <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="permission_write_image" msgid="3518991791620523786">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> កែ​រូបថត​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> កែ​រូបថត <xliff:g id="COUNT">^2</xliff:g> សន្លឹកឬ?}}"</string>
+    <string name="permission_progress_write_image" msgid="3623580315590025262">"{count,plural, =1{កំពុងកែ​រូបថត…}other{កំពុងកែ​រូបថត <xliff:g id="COUNT">^1</xliff:g> សន្លឹក…}}"</string>
+    <string name="permission_write_generic" msgid="7431128739233656991">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> កែ​ធាតុ​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> កែ​ធាតុ <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_write_generic" msgid="2806560971318391443">"{count,plural, =1{កំពុងកែ​ធាតុ…}other{កំពុងកែ​ធាតុ <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="permission_trash_audio" msgid="6554672354767742206">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​ឯកសារ​សំឡេង​នេះ​ទៅ​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​ឯកសារ​សំឡេង <xliff:g id="COUNT">^2</xliff:g> ទៅ​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_trash_audio" msgid="3116279868733641329">"{count,plural, =1{កំពុងផ្លាស់ទី​ឯកសារសំឡេង​ទៅធុងសំរាម…}other{កំពុងផ្លាស់ទី​ឯកសារសំឡេង <xliff:g id="COUNT">^1</xliff:g> ទៅធុងសំរាម…}}"</string>
+    <string name="permission_trash_video" msgid="7555850843259959642">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​វីដេអូ​នេះ​ទៅ​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​វីដេអូ <xliff:g id="COUNT">^2</xliff:g> ទៅ​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_trash_video" msgid="4637821778329459681">"{count,plural, =1{កំពុងផ្លាស់ទី​វីដេអូទៅ​ធុងសំរាម…}other{កំពុងផ្លាស់ទី​វីដេអូ <xliff:g id="COUNT">^1</xliff:g> ទៅធុងសំរាម…}}"</string>
+    <string name="permission_trash_image" msgid="3333128084684156675">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​រូបថត​នេះ​ទៅ​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​រូបថត <xliff:g id="COUNT">^2</xliff:g> សន្លឹកទៅ​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_trash_image" msgid="3063857679090024764">"{count,plural, =1{កំពុងផ្លាស់ទី​រូបថត​ទៅធុងសំរាម…}other{កំពុងផ្លាស់ទី​រូបថត <xliff:g id="COUNT">^1</xliff:g> សន្លឹកទៅធុងសំរាម…}}"</string>
+    <string name="permission_trash_generic" msgid="5545420534785075362">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​ធាតុ​នេះ​ទៅ​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​ធាតុ <xliff:g id="COUNT">^2</xliff:g> ទៅ​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_trash_generic" msgid="7815124979717814057">"{count,plural, =1{កំពុងផ្លាស់ទីធាតុទៅ​ធុងសំរាម…}other{កំពុងផ្លាស់ទីធាតុ <xliff:g id="COUNT">^1</xliff:g> ទៅធុងសំរាម…}}"</string>
+    <string name="permission_untrash_audio" msgid="8404597563284002472">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​ឯកសារ​សំឡេង​នេះ​ចេញពី​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​ឯកសារ​សំឡេង <xliff:g id="COUNT">^2</xliff:g> ចេញពី​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_untrash_audio" msgid="2775372344946464508">"{count,plural, =1{កំពុងផ្លាស់ទី​ឯកសារសំឡេង​ចេញពីធុងសំរាម…}other{កំពុងផ្លាស់ទី​ឯកសារសំឡេង <xliff:g id="COUNT">^1</xliff:g> ចេញពីធុងសំរាម…}}"</string>
+    <string name="permission_untrash_video" msgid="3178914827607608162">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​វីដេអូនេះ​ចេញពី​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​វីដេអូ <xliff:g id="COUNT">^2</xliff:g> ចេញពី​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_untrash_video" msgid="5500929409733841567">"{count,plural, =1{កំពុងផ្លាស់ទី​វីដេអូ​ចេញពីធុងសំរាម…}other{កំពុងផ្លាស់ទី​វីដេអូ <xliff:g id="COUNT">^1</xliff:g> ចេញពីធុងសំរាម…}}"</string>
+    <string name="permission_untrash_image" msgid="3397523279351032265">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​រូបថត​នេះ​ចេញពី​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​រូបថត <xliff:g id="COUNT">^2</xliff:g> សន្លឹកចេញពី​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_untrash_image" msgid="5295061520504846264">"{count,plural, =1{កំពុងផ្លាស់ទី​រូបថត​ចេញពីធុងសំរាម…}other{កំពុងផ្លាស់ទី​រូបថត <xliff:g id="COUNT">^1</xliff:g> សន្លឹកចេញពីធុងសំរាម…}}"</string>
+    <string name="permission_untrash_generic" msgid="2118366929431671046">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> ផ្លាស់ទី​ធាតុ​នេះ​ចេញពី​ធុងសំរាម​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> ផ្លាស់ទី​ធាតុ <xliff:g id="COUNT">^2</xliff:g> ចេញពី​ធុងសំរាម​ឬ?}}"</string>
+    <string name="permission_progress_untrash_generic" msgid="1489511601966842579">"{count,plural, =1{កំពុងផ្លាស់ទី​ធាតុចេញពី​ធុងសំរាម…}other{កំពុងផ្លាស់ទី​ធាតុ <xliff:g id="COUNT">^1</xliff:g> ចេញពីធុងសំរាម…}}"</string>
+    <string name="permission_delete_audio" msgid="3326674742892796627">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> លុប​ឯកសារ​សំឡេង​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> លុប​ឯកសារ​សំឡេង <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_delete_audio" msgid="1734871539021696401">"{count,plural, =1{កំពុងលុបឯកសារសំឡេង…}other{កំពុងលុបឯកសារសំឡេង <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="permission_delete_video" msgid="604024971828349279">"{count,plural, =1{អនុញ្ញាត​ឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> លុប​វីដេអូ​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> លុប​វីដេអូ <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_delete_video" msgid="1846702435073793157">"{count,plural, =1{កំពុងលុប​វីដេអូ…}other{កំពុងលុប​វីដេអូ <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="permission_delete_image" msgid="3109056012794330510">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> លុប​រូបថត​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> លុប​រូបថត <xliff:g id="COUNT">^2</xliff:g> សន្លឹកឬ?}}"</string>
+    <string name="permission_progress_delete_image" msgid="8580517204901148906">"{count,plural, =1{កំពុង​លុបរូបថត…}other{កំពុង​លុបរូបថត <xliff:g id="COUNT">^1</xliff:g> សន្លឹក…}}"</string>
+    <string name="permission_delete_generic" msgid="7891939881065520271">"{count,plural, =1{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_0">^1</xliff:g> លុប​ធាតុ​នេះ​ឬ?}other{អនុញ្ញាតឱ្យ <xliff:g id="APP_NAME_1">^1</xliff:g> លុប​ធាតុ <xliff:g id="COUNT">^2</xliff:g> ឬ?}}"</string>
+    <string name="permission_progress_delete_generic" msgid="6709118146245087898">"{count,plural, =1{កំពុងលុប​ធាតុ…}other{កំពុងលុបធាតុ <xliff:g id="COUNT">^1</xliff:g>…}}"</string>
+    <string name="transcode_denied" msgid="6760546817138288976">"<xliff:g id="APP_NAME">%s</xliff:g> មិនអាច​ដំណើរការ​ឯកសារមេឌៀ​បានទេ"</string>
+    <string name="transcode_processing_cancelled" msgid="5340383917746945590">"បានបោះបង់​ការដំណើរការ​មេឌៀ"</string>
+    <string name="transcode_processing_error" msgid="8921643164508407874">"មានបញ្ហា​ក្នុងការដំណើរការ​មេឌៀ"</string>
+    <string name="transcode_processing_success" msgid="447288876429730122">"ការដំណើរការមេឌៀជោគជ័យហើយ"</string>
+    <string name="transcode_processing_started" msgid="7789086308155361523">"បានចាប់ផ្ដើម​ការដំណើរការមេឌៀ"</string>
+    <string name="transcode_processing" msgid="6753136468864077258">"កំពុងដំណើរការមេឌៀ…"</string>
+    <string name="transcode_cancel" msgid="8555752601907598192">"បោះបង់"</string>
+    <string name="transcode_wait" msgid="8909773149560697501">"រង់ចាំ"</string>
+    <string name="safety_protection_icon_label" msgid="6714354052747723623">"ការការពារសុវត្ថិភាព"</string>
+    <string name="transcode_alert_channel" msgid="997332371757680478">"ការជូន​ដំណឹង​អំពី​ការបំប្លែង​កូដ​ដើម"</string>
+    <string name="transcode_progress_channel" msgid="6905136787933058387">"ដំណើរ​វិវឌ្ឍ​នៃ​ការបំប្លែង​កូដ​ដើម"</string>
+    <string name="dialog_error_message" msgid="5120432204743681606">"សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។ រូបថត​របស់អ្នក​នឹងអាចប្រើបាន បន្ទាប់ពី​ដោះស្រាយ​បញ្ហា។"</string>
+    <string name="dialog_error_title" msgid="636349284077820636">"មិនអាចផ្ទុករូបថតមួយចំនួនបានទេ"</string>
+    <string name="dialog_button_text" msgid="351366485240852280">"យល់ហើយ"</string>
+</resources>
